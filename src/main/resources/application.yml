@@ -1,0 +1,17 @@
+server: 
+  port: 8686
+spring:
+  application:
+    name: MyApplication
+  datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: Kamesh@95
+      url: jdbc:mysql://localhost:3306/myapplication
+  banner:
+    location: banner.txt
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
